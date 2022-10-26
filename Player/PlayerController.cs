@@ -203,7 +203,7 @@ public class PlayerController : MonoBehaviour
 		previousTouchingGround = touchingGround;
     }
 
-	// Handles the "Jump" Input Action
+	//Handles the "Jump" Input Action
 	public void Jump(InputAction.CallbackContext context)
     {
 		if(!jumping && !falling && grounded && context.performed)
@@ -216,7 +216,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-	// Handles the "Move" Input Action
+	//Handles the "Move" Input Action
 	public void Move(InputAction.CallbackContext context)
     {
 		moving = context.performed;
@@ -356,23 +356,23 @@ public class PlayerController : MonoBehaviour
         uiManager.addItemToCollection(cosmName);
     }
 
-	// update dodge parameters
+	//Update dodge parameters
 	public void updateDodge(int level){
 		switch(level){
 			case 1:
-				// increase dodge time
+				//Increase dodge time
 				dodgeTime = baseDodgeTime + 0.1f;
 				break;
 			case 2:
-				// increase dodge time
+				//Increase dodge time
 				dodgeTime = baseDodgeTime + 0.2f;
-				// decrease stamina cost
+				//Decrease stamina cost
 				dodgeCost = baseDodgeCost - 0.05f;
 				break;
 			case 3:
-				// increase dodge time
+				//Increase dodge time
 				dodgeTime = baseDodgeTime + 0.3f;
-				// decrease stamina cost
+				//Decrease stamina cost
 				dodgeCost = baseDodgeCost - 0.05f;
 				break;
 		}
