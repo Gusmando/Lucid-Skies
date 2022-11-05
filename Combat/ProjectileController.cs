@@ -41,7 +41,7 @@ public class ProjectileController : MonoBehaviour
     }
 
     //Fire function fires the current weapon with the passed in 
-    //damahe value
+    //damage value
 	public void fire(float damage)
     {
         if(currentWeapon.canFire && currentWeapon.clipSize != 0)
@@ -51,7 +51,7 @@ public class ProjectileController : MonoBehaviour
     }
 
     //Resets weapon clip size and removes the clip from the 
-    //current number of clips
+    //current total
     public void Reload()
     {
         StartCoroutine(reloadDelay(reloadTime));
